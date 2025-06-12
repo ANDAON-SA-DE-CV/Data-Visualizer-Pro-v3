@@ -42,6 +42,10 @@ Desktop.ini
 
 # Misc
 *~
+<<<<<<< HEAD
 🚀*.docx
 *Roadmap*.docx
 Data-Visualizer-Pro-v3.2/
+=======
+🚀 Roadmap Completo.docx
+>>>>>>> 35056a9 (chore: clean jest configuration conflicts)
