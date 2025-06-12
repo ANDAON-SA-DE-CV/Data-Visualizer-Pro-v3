@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/@dv/shared" },
+    { "path": "packages/@dv/charts-engine" },
+    { "path": "packages/@dv/ml-pipelines" },
+    { "path": "packages/@dv/backend" },
+    { "path": "packages/@dv/bubble-plugin" }
+  ]
+}

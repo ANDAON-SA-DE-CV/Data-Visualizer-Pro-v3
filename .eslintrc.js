@@ -1,0 +1,43 @@
+module.exports = {
+  root: true,
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint'],
+  extends: [
+    'eslint:recommended'
+  ],
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: 'module'
+  },  rules: {
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['error', { 
+      argsIgnorePattern: '^_',
+      varsIgnorePattern: '^_'
+    }],
+    'no-console': 'warn',
+    'prefer-const': 'error'
+  },
+  overrides: [
+    {
+      files: ['**/__tests__/**/*.ts', '**/*.test.ts', '**/*.spec.ts'],
+      rules: {
+        '@typescript-eslint/no-unused-vars': 'off'
+      }
+    }
+  ],
+  ignorePatterns: [
+    'dist/**',
+    'coverage/**',
+    'node_modules/**',
+    '*.js',
+    '*.cjs',
+    'webpack.config.js',
+    'jest.config.cjs',
+    '.eslintrc.js'
+  ],
+  env: {
+    node: true,
+    es6: true,
+    jest: true
+  }
+};

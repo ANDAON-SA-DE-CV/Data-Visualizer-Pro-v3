@@ -1,0 +1,12 @@
+// packages/@dv/charts-engine/tsconfig.json
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "dist"
+  },
+  "include": ["src/**/*"]
+}
+
+
+
