@@ -11,19 +11,28 @@ module.exports = {
       preset: 'ts-jest',
       testEnvironment: 'node',
       transform: {
-        '^.+\\.tsx?$': 'ts-jest'
+        '^.+\\.tsx?$': ['ts-jest', {
+          tsconfig: {
+            esModuleInterop: true,
+            allowSyntheticDefaultImports: true
+          }
+        }]
       },
       moduleNameMapper: {
         '^(\\.{1,2}/.*)\\.js$': '$1'
       }
-    },
-    {
+    },    {
       displayName: '@dv/charts-engine',
       testMatch: ['<rootDir>/packages/@dv/charts-engine/**/__tests__/**/*.[jt]s?(x)', '<rootDir>/packages/@dv/charts-engine/**/?(*.)+(spec|test).[jt]s?(x)'],
       preset: 'ts-jest',
       testEnvironment: 'node',
       transform: {
-        '^.+\\.tsx?$': 'ts-jest'
+        '^.+\\.tsx?$': ['ts-jest', {
+          tsconfig: {
+            esModuleInterop: true,
+            allowSyntheticDefaultImports: true
+          }
+        }]
       },
       moduleNameMapper: {
         '^(\\.{1,2}/.*)\\.js$': '$1'
@@ -35,7 +44,12 @@ module.exports = {
       preset: 'ts-jest',
       testEnvironment: 'node',
       transform: {
-        '^.+\\.tsx?$': 'ts-jest'
+        '^.+\\.tsx?$': ['ts-jest', {
+          tsconfig: {
+            esModuleInterop: true,
+            allowSyntheticDefaultImports: true
+          }
+        }]
       },
       moduleNameMapper: {
         '^(\\.{1,2}/.*)\\.js$': '$1'
@@ -47,7 +61,12 @@ module.exports = {
       preset: 'ts-jest',
       testEnvironment: 'node',
       transform: {
-        '^.+\\.tsx?$': 'ts-jest'
+        '^.+\\.tsx?$': ['ts-jest', {
+          tsconfig: {
+            esModuleInterop: true,
+            allowSyntheticDefaultImports: true
+          }
+        }]
       },
       moduleNameMapper: {
         '^(\\.{1,2}/.*)\\.js$': '$1'
@@ -59,7 +78,12 @@ module.exports = {
       preset: 'ts-jest',
       testEnvironment: 'node',
       transform: {
-        '^.+\\.tsx?$': 'ts-jest'
+        '^.+\\.tsx?$': ['ts-jest', {
+          tsconfig: {
+            esModuleInterop: true,
+            allowSyntheticDefaultImports: true
+          }
+        }]
       },
       moduleNameMapper: {
         '^(\\.{1,2}/.*)\\.js$': '$1'
