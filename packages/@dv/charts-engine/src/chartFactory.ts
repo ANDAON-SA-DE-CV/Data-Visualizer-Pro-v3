@@ -24,13 +24,11 @@ export class ChartFactory {
     }
 
     return DataTransformer.transformToChart(rawData, options);
-  }
-
-  /**
+  }  /**
    * Verifica si el tipo de chart es soportado
    */
   static isValidType(type: string): type is ChartData['type'] {
-    return this.supportedTypes.includes(type as ChartData['type']);
+    return this.supportedTypes.indexOf(type as ChartData['type']) !== -1;
   }
 
   /**
